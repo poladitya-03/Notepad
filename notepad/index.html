@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.0/sweetalert.min.js"></script>
+    <script src="note.js"></script>
+</head>
+<body onload="showList()" style="background-color: rgb(243, 215, 165);" >
+    <!-- Image and text -->
+<nav class="navbar navbar-light" style="background-color: rgb(236, 193, 140);" >
+    <a class="navbar-brand" href="#" style="color: rgb(255, 255, 255);">
+      <img src="images/clipboard-regular.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+      <b>Notepad En++</b>
+      
+    </a>
+    
+    <span id="nav"></span>
+    
+  </nav>
+  <div class="container">
+  <span id="srch" onclick="display()">
+  <img src="images/magnifying-glass-solid.svg"  style="z-index: 100;background-color: rgb(255, 255, 255);position: fixed;border-radius: 50px;right: 40px;bottom: 180px;" width="30" height="30" class="d-inline-block align-top" alt="">
+  </span>
+
+  <span id="add" onclick="add()">
+  <img src="images/plus-solid.svg"  style="z-index:100;background-color: rgb(255, 255, 255);position: fixed;border-radius: 50px;right: 40px;bottom: 60px;" width="30" height="30"  alt="">
+  </span>
+  
+  
+</div>
+<div id="notes" class="container"></div>
+</body>
+</html>
